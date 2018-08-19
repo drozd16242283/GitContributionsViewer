@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+html {
+  background-color: white;
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+  height: auto;
+  font-family: 'Helvetica', sans-serif;
+}
+
+
+@import "include/variables";
+@import 'include/normalize';
+@import "include/fonts";
