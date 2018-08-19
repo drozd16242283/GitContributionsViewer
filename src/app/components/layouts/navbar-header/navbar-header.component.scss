@@ -1,0 +1,35 @@
+@import "~assets/styles/include/variables";
+
+.navigation {
+  background-color: $navigation-menu-color;
+  justify-content: space-between;
+  padding: 10px 50px;
+
+  &__logo {
+    .logo__img {
+      color: $navigation-menu-text-color;
+    }
+
+    .logo__brand-name {
+      color: $navigation-menu-text-color;
+      font-size: 25px;
+    }
+  }
+
+  &__menu {
+
+    .menu {
+
+      &__link {
+        text-decoration: none;
+        font-family: 'HelveticaLight';
+        color: $navigation-menu-text-color;
+        font-size: $navigation-text-size;
+
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+}
