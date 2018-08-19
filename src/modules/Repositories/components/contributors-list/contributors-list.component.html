@@ -1,0 +1,11 @@
+<section class="contributors-list">
+  <span class="contributors-list__text">{{contributorsList.length}} Contributors</span>
+  <div class="contributors-list__items">
+    <div *ngFor="let contributor of contributorsList" class="contributors-list__item">
+      <app-contributors-item [contributor]="contributor"></app-contributors-item>
+    </div>
+  </div>
+</section>
+<div *ngIf="loading" class="spinner-wrapper">
+  <mat-spinner></mat-spinner>
+</div>

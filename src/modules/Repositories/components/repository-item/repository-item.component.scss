@@ -1,0 +1,44 @@
+.repository-card {
+
+  &__header {
+
+    &__title {
+
+      &__link {
+        text-decoration: none;
+        color: #0366d6;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 500;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    &__subtitle {
+
+      &__description {
+        margin-bottom: 10px;
+
+      }
+
+      &__additional {
+        display: inline-flex;
+        width: 100%;
+
+        .additional-info {
+          display: flex;
+          align-items: center;
+          margin-right: 20px;
+
+          .additional__count {
+            font-size: 14px;
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+}

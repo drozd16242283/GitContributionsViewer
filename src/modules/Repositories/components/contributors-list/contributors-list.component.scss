@@ -1,0 +1,25 @@
+.contributors-list {
+
+  &__text {
+    font-size: 20px;
+    display: flex;
+    margin-bottom: 10px;
+    font-family: 'HelveticaLight';
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.spinner-wrapper {
+  display: table;
+  margin: 0 auto;
+
+  ::ng-deep {
+    mat-spinner circle {
+      stroke: rgba(53, 151, 209, 0.5) !important;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+<mat-card class="contributor-item">
+  <mat-card-header class="contributor-header">
+    <img class="contributor-header__avatar" mat-card-avatar [src]="contributor.avatar_url">
+    <mat-card-title class="contributor-title">
+      <span [routerLink]="contributorUrl" class="contributor-title__name">{{contributor.login}}</span>
+      <a class="contributor-link" [href]="contributor.html_url" target="_blank">
+        <img class="contributor-link__icon" src="assets/img/GitHub-Mark-32px.png">
+      </a>
+    </mat-card-title>
+    <mat-card-subtitle class="contributor-subtitle">{{contributor.contributions}} contribution</mat-card-subtitle>
+  </mat-card-header>
+</mat-card>

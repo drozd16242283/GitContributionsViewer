@@ -1,0 +1,30 @@
+<section *ngIf="repositoryOwner" class="repository-user-info">
+  <mat-card class="repository-user-info__card">
+    <mat-card-header class="user-card-header">
+      <img class="user-card-header__avatar" mat-card-avatar [src]="repositoryOwner.avatar_url">
+      <mat-card-title class="user-card-header__title">{{repositoryOwner.name}}</mat-card-title>
+      <mat-card-subtitle class="user-card-header__subtitle">
+        <div *ngIf="repositoryOwner.location" class="subtitle-block">
+          <mat-icon class="subtitle-block__icon">location_on</mat-icon>
+          <span class="subtitle-block__text">{{repositoryOwner.location}}</span>
+        </div>
+        <div *ngIf="repositoryOwner.blog" class="subtitle-block">
+          <mat-icon class="subtitle-block__icon">link</mat-icon>
+          <a class="subtitle-block__link subtitle-block__text"
+             [href]="repositoryOwner.blog" target="_blank">{{repositoryOwner.blog}}
+          </a>
+        </div>
+        <div *ngIf="repositoryOwner.email" class="subtitle-block">
+          <mat-icon class="subtitle-block__icon">email</mat-icon>
+          <a class="subtitle-block__link subtitle-block__text"
+             href="mailto:team@scalhive.com">{{repositoryOwner.email}}
+          </a>
+        </div>
+        <div *ngIf="repositoryOwner.public_repos" class="subtitle-block">
+          <mat-icon class="subtitle-block__icon">book</mat-icon>
+          <span class="subtitle-block__text">{{repositoryOwner.public_repos}}</span>
+        </div>
+      </mat-card-subtitle>
+    </mat-card-header>
+  </mat-card>
+</section>

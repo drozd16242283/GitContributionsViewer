@@ -1,0 +1,51 @@
+.repository-user-info {
+
+  &__card {
+    min-width: 260px;
+
+    .user-card-header {
+
+      ::ng-deep {
+        .mat-card-header-text {
+          width: 100%;
+        }
+      }
+
+      &__avatar {
+        width: 80px;
+        height: 80px;
+      }
+
+      &__title {
+        font-size: 25px;
+        line-height: 40px;
+        font-family: 'HelveticaLight';
+      }
+
+      &__subtitle {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .subtitle-block {
+          display: flex;
+          align-items: center;
+          padding-bottom: 5px;
+
+          &__icon {
+            margin-right: 3px;
+          }
+
+          &__link {
+            text-decoration: none;
+          }
+
+          &__text {
+            font-family: 'HelveticaLight';
+            color: #757575;
+          }
+        }
+      }
+    }
+  }
+}

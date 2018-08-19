@@ -1,0 +1,39 @@
+.list-of-repositories {
+  padding-top: 50px;
+  margin: 0 auto;
+  width: 70%;
+
+  .search-repository {
+    width: 50%;
+    margin: 0 auto;
+    min-width: 300px;
+
+    &__form {
+      width: 90%;
+    }
+
+    &__input {
+
+    }
+
+    &__icon {
+      vertical-align: middle;
+      cursor: pointer;
+    }
+  }
+
+  .spinner-wrapper {
+    display: table;
+    margin: 0 auto;
+
+    ::ng-deep {
+      mat-spinner circle {
+        stroke: rgba(53, 151, 209, 0.5) !important;
+      }
+    }
+  }
+
+  .repositories-list {
+
+  }
+}

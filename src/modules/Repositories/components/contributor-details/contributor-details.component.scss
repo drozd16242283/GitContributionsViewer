@@ -1,0 +1,15 @@
+.contribution-detail {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.spinner-wrapper {
+  display: table;
+  margin: 0 auto;
+
+  ::ng-deep {
+    mat-spinner circle {
+      stroke: rgba(53, 151, 209, 0.5) !important;
+    }
+  }
+}

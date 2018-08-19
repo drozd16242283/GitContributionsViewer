@@ -1,0 +1,19 @@
+<div class="list-of-repositories">
+  <section class="search-repository">
+    <mat-form-field class="search-repository__form">
+      <input #searchInput matInput class="search-repository__input" type="search"
+             (keyup.enter)="searchRepository(searchInput.value)"
+             autocomplete="off" [value]="searchUser" placeholder="Search repositories...">
+    </mat-form-field>
+    <mat-icon (click)="searchRepository(searchInput.value)" class="search-repository__icon">search</mat-icon>
+  </section>
+  <app-repository-owner [repositoryOwner]="repositoryOwner"></app-repository-owner>
+  <section class="repositories-list">
+    <div *ngFor="let repo of repositoriesList" class="repositories-list__item">
+      <app-repository-item [repository]="repo"></app-repository-item>
+    </div>
+  </section>
+  <div *ngIf="loading" class="spinner-wrapper">
+    <mat-spinner></mat-spinner>
+  </div>
+</div>

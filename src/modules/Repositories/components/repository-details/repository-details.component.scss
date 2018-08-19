@@ -1,0 +1,52 @@
+.repository-details-card {
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 50px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid #ababab;
+    margin-bottom: 50px;
+
+    .details-card__header {
+      display: inline-flex;
+
+      .details-card-title {
+        font-size: 20px;
+        line-height: 30px;
+        font-family: 'HelveticaLight';
+      }
+
+      .details-card-subtitle {
+
+      }
+    }
+
+    .card-title__additional-info {
+      display: inline-flex;
+      max-width: 300px;
+
+      .additional-info {
+        display: inline-flex;
+        flex-wrap: wrap;
+
+        .additional-details {
+          display: flex;
+          margin: 0 10px 10px 0;
+
+          .additional-info__text {
+            margin-left: 5px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .details-card__body {
+
+  }
+}
