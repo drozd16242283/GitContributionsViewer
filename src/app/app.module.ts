@@ -18,7 +18,6 @@ import { NavbarHeaderComponent } from './components/layouts/navbar-header/navbar
 
 // Services
 import { AppConfig } from '@app/app.config';
-import { FooterComponent } from './components/layouts/footer/footer.component';
 
 @NgModule({
   declarations: [

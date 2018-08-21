@@ -39,6 +39,8 @@ export class ContributorDetailsComponent implements OnInit {
     this._contributionService.getContributorDetailInfo(userName).subscribe((contributions: any) => {
       this._contributorInfo = contributions;
       this.draw(userName);
+    }, error => {
+      this._loading = false;
     })
   }
 

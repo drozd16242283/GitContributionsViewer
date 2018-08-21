@@ -6,8 +6,8 @@ import { Observable } from 'rxjs';
 @Injectable()
 export class ContributorsHttpService extends BaseHttpService {
 
-  fetchContributorsByRepository(owner: string, repository: string): Observable<any> {
-    return this.get(this.concatUrl(`repos/${owner}/${repository}/contributors`));
+  fetchContributorsByRepository(owner: string, repository: string, page: number): Observable<any> {
+    return this.get(this.concatUrl(`repos/${owner}/${repository}/contributors?page=${page}`));
   }
 
   fetchContributorInfo(userName: string): Observable<any> {

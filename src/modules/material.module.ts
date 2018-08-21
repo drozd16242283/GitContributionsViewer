@@ -13,7 +13,8 @@ import {
   MatSelectModule,
   MatDatepickerModule,
   MatNativeDateModule,
-  MatExpansionModule
+  MatExpansionModule,
+  MatPaginatorModule
 } from '@angular/material';
 
 const materialModules = [
@@ -29,7 +30,8 @@ const materialModules = [
   MatSelectModule,
   MatDatepickerModule,
   MatNativeDateModule,
-  MatExpansionModule
+  MatExpansionModule,
+  MatPaginatorModule
 ];
 
 @NgModule({

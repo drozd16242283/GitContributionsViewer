@@ -13,6 +13,7 @@ import { RepositoryOwnerComponent } from './components/repository-owner/reposito
 import { ContributorsListComponent } from './components/contributors-list/contributors-list.component';
 import { ContributorsItemComponent } from '@repositories/components/contributors-item/contributors-item.component';
 import { ContributorDetailsComponent } from '@repositories/components/contributor-details/contributor-details.component';
+import { PaginationComponent } from './components/pagination/pagination.component';
 
 @NgModule({
   imports: [
@@ -31,13 +32,15 @@ import { ContributorDetailsComponent } from '@repositories/components/contributo
     RepositoryOwnerComponent,
     ContributorsListComponent,
     ContributorsItemComponent,
-    ContributorDetailsComponent
+    ContributorDetailsComponent,
+    PaginationComponent
   ],
   exports: [
     RepositoryItemComponent,
     RepositoryOwnerComponent,
     ContributorsListComponent,
-    ContributorsItemComponent
+    ContributorsItemComponent,
+    PaginationComponent
   ]
 })
 export class RepositoriesModule { }

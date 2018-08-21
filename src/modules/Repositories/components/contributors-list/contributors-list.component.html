@@ -1,9 +1,13 @@
 <section class="contributors-list">
-  <span class="contributors-list__text">{{contributorsList.length}} Contributors</span>
   <div class="contributors-list__items">
     <div *ngFor="let contributor of contributorsList" class="contributors-list__item">
       <app-contributors-item [contributor]="contributor"></app-contributors-item>
     </div>
+  </div>
+  <div class="contributors-list__pagination">
+    <app-pagination (nextPageAction)="nextPage()"
+                    (previousPageAction)="previousPage()">
+    </app-pagination>
   </div>
 </section>
 <div *ngIf="loading" class="spinner-wrapper">

@@ -9,8 +9,8 @@ export class ContributorsService {
 
   constructor(protected _contributorHttpService: ContributorsHttpService) { }
 
-  getContributorsList(owner: string, repository: string): Observable<IContributor> {
-    return this._contributorHttpService.fetchContributorsByRepository(owner, repository)
+  getContributorsList(owner: string, repository: string, page: number): Observable<IContributor> {
+    return this._contributorHttpService.fetchContributorsByRepository(owner, repository, page)
       .pipe(map((contributors: any) => {
         return contributors.map(contributor => {
           return {

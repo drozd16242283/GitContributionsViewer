@@ -11,6 +11,8 @@ export class ContributorsListComponent implements OnInit {
   @Input() owner;
   @Input() repository;
 
+  public pageNumber = 1;
+
   private _loading = false;
 
   get loading(): boolean {
@@ -26,18 +28,28 @@ export class ContributorsListComponent implements OnInit {
   constructor(private _contributorsService: ContributorsService) { }
 
   ngOnInit() {
-    this.getContributorsList(this.owner, this.repository);
+    this.getContributorsList(this.pageNumber);
   }
 
-  getContributorsList(owner: string, repository: string) {
+  getContributorsList(page: number) {
     this._loading = true;
-    this._contributorsService.getContributorsList(owner, repository).subscribe(
+    this._contributorsService.getContributorsList(this.owner, this.repository, page).subscribe(
       (contributors: any) => {
         this._contributorsList = contributors;
         this._loading = false;
       }, error => {
         this._loading = false;
       })
+  }
+
+  nextPage() {
+    this.pageNumber++;
+    this.getContributorsList(this.pageNumber);
+  }
+
+  previousPage() {
+    this.pageNumber--;
+    this.getContributorsList(this.pageNumber);
   }
 
 }
