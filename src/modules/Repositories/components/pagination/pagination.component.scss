@@ -1,0 +1,23 @@
+.list-pagination {
+  display: flex;
+  justify-content: space-between;
+
+  &__arrow {
+    display: flex;
+    align-items: center;
+
+    .pagination-text {
+      color: #0366d6;
+      cursor: pointer;
+      font-size: 16px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .pagination-arrow {
+      color: #0366d6;
+    }
+  }
+}
