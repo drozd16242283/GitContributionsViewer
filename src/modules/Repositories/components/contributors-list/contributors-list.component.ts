@@ -13,6 +13,8 @@ export class ContributorsListComponent implements OnInit {
 
   public pageNumber = 1;
 
+  public needPagination = false;
+
   private _loading = false;
 
   get loading(): boolean {
@@ -36,6 +38,7 @@ export class ContributorsListComponent implements OnInit {
     this._contributorsService.getContributorsList(this.owner, this.repository, page).subscribe(
       (contributors: any) => {
         this._contributorsList = contributors;
+        this.needPagination = (contributors.length === 30);
         this._loading = false;
       }, error => {
         this._loading = false;
@@ -48,8 +51,10 @@ export class ContributorsListComponent implements OnInit {
   }
 
   previousPage() {
-    this.pageNumber--;
-    this.getContributorsList(this.pageNumber);
+    if (this.pageNumber > 1) {
+      this.pageNumber--;
+      this.getContributorsList(this.pageNumber);
+    }
   }
 
 }
