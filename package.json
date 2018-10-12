@@ -1,5 +1,5 @@
 {
-  "name": "ScalHive_Frontend",
+  "name": "GitContributionsViewer",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/drozd16242283/ScalHive_Frontend.git"
+    "url": "git+https://gitlab.com/drozd16242283/GitContributionsViewer.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/drozd16242283/ScalHive_Frontend/issues"
+    "url": "https://gitlab.com/drozd16242283/GitContributionsViewer/issues"
   },
-  "homepage": "https://gitlab.com/drozd16242283/ScalHive_Frontend#README",
+  "homepage": "https://gitlab.com/drozd16242283/GitContributionsViewer#README",
   "dependencies": {
     "@angular/animations": "6.0.2",
     "@angular/cdk": "6.1.0",
