@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { RepositoriesService } from '@repositories/services/repositories.service';
 import { IRepositoryOwner, IRepository } from '@repositories/models/repository';
 
-const DEFAULT_USER = 'ScalHive';
+const DEFAULT_USER = 'drozd16242283';
 
 @Component({
   selector: 'app-list-of-repositories',
